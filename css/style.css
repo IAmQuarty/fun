@@ -1,0 +1,21 @@
+.hello {
+    font-size: 5rem;
+    background: linear-gradient(to right, #ff0000, #ff0123, #0000ff, #0000f4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.taddy {
+    position: relative;
+}
+
+.bow {
+    top: 2px;
+    width: 140px;
+    position: absolute;
+    left: 2px;
+    transform: rotate(-30deg);
+}
+
+
