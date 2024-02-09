@@ -1,61 +1,55 @@
 body {
     background: linear-gradient(to right, #000000, #52434b, #b06195, #d23aac, #ff00cc);
-    /* display: flex;
-    min-height: 100vh;
-    margin: 0; */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: transparent; /* Set text color to transparent to apply gradient */
+    -webkit-background-clip: text; /* Apply background to text */
+    background-clip: text;
 }
 
-/* .heart-container {
-    position: relative;
-    width: 100px;
-    height: 100px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align content */
 }
 
-.heart {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.heart:hover {
-    animation: heartbeat 1s infinite;
-}
-
-@keyframes heartbeat {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-} */
-
-.heading{
-    text-align: center;
+.heading {
     font-size: 5rem;
+    margin-bottom: 20px;
     background: linear-gradient(to right, #ff0000, #ff0123, #0000ff, #0000f4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 4px 1px 2px rgba(39, 21, 21, 0.6);
+    text-shadow: 4px 1px 2px rgba(198,72,72,0.6);
 }
 
-.heading2{
-    text-align: center;
+.heading2 {
     font-size: 3rem;
-    background: linear-gradient(to right, #4a2f43, #a44186, #eb3ce8, #f770de);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 4px 1px 2px rgba(39, 21, 21, 0.6)
+    margin-bottom: 20px;
 }
 
-.heart{
-    margin-left: 500px;
+.heart {
+    display: inline-block; /* Make image inline block to center align */
+    margin-bottom: 20px;
 }
-.buttons{
-    margin-left: 400px;
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    margin: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .heading2 {
+        font-size: 2rem;
+    }
 }
